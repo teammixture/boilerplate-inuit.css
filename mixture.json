@@ -1,0 +1,17 @@
+{
+  "debug": false,
+  "lintScripts": false,
+  "preprocessorScriptOutput": "public/scripts",
+  "preprocessorStyleOutput": "public/styles",
+  "projectName": "inuit.css",
+  "projectDescription": "A powerful, scalable, Sass-based, BEM, OOCSS framework.",
+  "publishedId": null,
+  "publishedAccount": null,
+  "serverHostName": null,
+  "serverPort": null,
+  "templateDirectory": "templates",
+  "templateDefaultLayout": "layout",
+  "templateDefaultPage": "index",
+  "type": "mixture",
+  "useCompass": false
+}
