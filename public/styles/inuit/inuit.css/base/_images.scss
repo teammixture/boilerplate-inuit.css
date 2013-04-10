@@ -4,12 +4,27 @@
 /**
  * Demo: jsfiddle.net/inuitcss/yMtur
  */
+/**
+ * Fluid images.
+ */
 img{
-    @if $flexible-media == true{
-        max-width:100%;
-        height:auto;
-    }
+    max-width:100%;
 }
+
+
+/**
+ * Non-fluid images if you specify `width` and/or `height` attributes.
+ */
+img[width],
+img[height]{
+    max-width:none;
+}
+
+
+/**
+ * Rounded images.
+ */
+.img--round { border-radius:$brand-round; }
 
 
 /**
@@ -35,7 +50,7 @@ img{
 
 /**
  * Keep your images on your baseline.
- * 
+ *
  * Please note, these will not work too nicely with fluid images and will
  * distort when resized below a certain width. Use with caution.
  */

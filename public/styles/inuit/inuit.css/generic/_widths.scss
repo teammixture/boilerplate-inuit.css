@@ -105,7 +105,7 @@
 
 /**
  * If you have set `$responsive` to ‘true’ in `_vars.scss` then you now have
- * access to these classes. You can define at which breakpoing you’d like an
+ * access to these classes. You can define at which breakpoint you’d like an
  * element to be a certain size, e.g.:
  *
  * `<div class="g  one-quarter  lap-one-half  palm-one-whole"> ... </div>`
@@ -128,12 +128,31 @@
     @include grid-setup("lap-");
 }
 
+@include media-query(lap-and-up){
+    @include grid-setup("lap-and-up-");
+}
+
 @include media-query(portable){
     @include grid-setup("portable-");
 }
 
 @include media-query(desk){
     @include grid-setup("desk-");
+}
+
+
+/**
+ * If you have set the additional `$responsive-extra` variable to ‘true’ in
+ * `_vars.scss` then you now have access to the following class available to
+ * accomodate much larger screen resolutions.
+ */
+
+@if $responsive-extra == true{
+
+@include media-query(desk-wide){
+    @include grid-setup("desk-wide-");
+}
+
 }
 
 } /* endif */
